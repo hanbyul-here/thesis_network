@@ -1,0 +1,52 @@
+[
+  {
+    "First Name":"Andrew ",
+    "Last Name":"Sigler",
+    "TAGS":"networked objects;physical computing;user interface"
+  },
+  {
+    "First Name":"Brett ",
+    "Last Name":"Peterson",
+    "TAGS":"education/learning;exhibition design;installation"
+  },
+  {
+    "First Name":"Liz ",
+    "Last Name":"Khoo",
+    "TAGS":"health/medical/wellness;research;user interface"
+  },
+  {
+    "First Name":"Emily ",
+    "Last Name":"Wagenknecht",
+    "TAGS":"environment;social/community;sustainability"
+  },
+  {
+    "First Name":"Sanniti ",
+    "Last Name":"Pimpley",
+    "TAGS":"physical computing;robotics"
+  },
+  {
+    "First Name":"Negar ",
+    "Last Name":"Behbahani",
+    "TAGS":"installation;projection mapping;sound/audio"
+  },
+  {
+    "First Name":"Wen Lei ",
+    "Last Name":"Ng",
+    "TAGS":"performance;physical computing;wearables/e-textiles"
+  },
+  {
+    "First Name":"Will ",
+    "Last Name":"Canine",
+    "TAGS":"robotics;living system;product design"
+  },
+  {
+    "First Name":"Yang ",
+    "Last Name":"Jiang",
+    "TAGS":"product design;storytelling/narrative;user interface"
+  },
+  {
+    "First Name":"Yuliya ",
+    "Last Name":"Parshina",
+    "TAGS":"education/learning;exhibition design;physical computing"
+  }
+]

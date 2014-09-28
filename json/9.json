@@ -1,0 +1,52 @@
+[
+  {
+    "First Name":"Colin ",
+    "Last Name":"Narver",
+    "TAGS":"mobile;social/community;web"
+  },
+  {
+    "First Name":"Fang-Yu ",
+    "Last Name":"Yang",
+    "TAGS":"game design;mobile;product design"
+  },
+  {
+    "First Name":"Jing ",
+    "Last Name":"Zhao",
+    "TAGS":"mobile;storytelling/narrative;web"
+  },
+  {
+    "First Name":"Kang-Ting ",
+    "Last Name":"Peng",
+    "TAGS":"physical computing;quantified self"
+  },
+  {
+    "First Name":"Sam ",
+    "Last Name":"Slover",
+    "TAGS":"data visualization;quantified self;user interface"
+  },
+  {
+    "First Name":"Sergio Majluf ",
+    "Last Name":"Jadue",
+    "TAGS":"education/learning;user interface;web"
+  },
+  {
+    "First Name":"Tarana ",
+    "Last Name":"Gupta",
+    "TAGS":"Data visualization;Urban intervention;User interface"
+  },
+  {
+    "First Name":"Tianran ",
+    "Last Name":"Qian",
+    "TAGS":"film/video/documentary;installation;mobile"
+  },
+  {
+    "First Name":"Tiffany ",
+    "Last Name":"Hewlett",
+    "TAGS":"data visualization;health/medical/wellness;wearables/e-textiles"
+  },
+  {
+    "First Name":"Pilar ",
+    "Last Name":"Zaragoza",
+    "TAGS":"research;social/community"
+  }
+]

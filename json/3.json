@@ -1,0 +1,52 @@
+[
+  {
+    "First Name":"Adam ",
+    "Last Name":"Quinn",
+    "TAGS":"entertainment;privacy;storytelling/narrative"
+  },
+  {
+    "First Name":"Andres ",
+    "Last Name":"Taraciuk",
+    "TAGS":"entertainment;game design;physical computing"
+  },
+  {
+    "First Name":"Anne-Marie ",
+    "Last Name":"Lavigne",
+    "TAGS":"physical computing;research;wearables/e-textiles"
+  },
+  {
+    "First Name":"David ",
+    "Last Name":"Lobser",
+    "TAGS":"kinetic sculpture;screen based art;web"
+  },
+  {
+    "First Name":"Edward ",
+    "Last Name":"Button",
+    "TAGS":"installation;research;site-specific"
+  },
+  {
+    "First Name":"Erin ",
+    "Last Name":"Smith",
+    "TAGS":"research;sustainability;wearables/e-textiles"
+  },
+  {
+    "First Name":"GJ ",
+    "Last Name":"Lee",
+    "TAGS":"game design"
+  },
+  {
+    "First Name":"Jorge A. ",
+    "Last Name":"Brake",
+    "TAGS":"mobile;user interface;web"
+  },
+  {
+    "First Name":"Michael ",
+    "Last Name":"Allison",
+    "TAGS":"performance;storytelling/narrative;virtual worlds"
+  },
+  {
+    "First Name":"Wyna ",
+    "Last Name":"Liu",
+    "TAGS":"kinetic sculpture;research"
+  }
+]

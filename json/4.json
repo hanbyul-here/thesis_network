@@ -1,0 +1,53 @@
+[
+
+  {
+    "First Name":"Andrew ",
+    "Last Name":"Cerrito",
+    "TAGS":"kinetic sculpture;physical computing;storytelling/narrative"
+  },
+  {
+    "First Name":"Hanna ",
+    "Last Name":"Moon",
+    "TAGS":"health/medical/wellness;mobile;web"
+  },
+  {
+    "First Name":"Ilwon ",
+    "Last Name":"Yoon",
+    "TAGS":"game design;health/medical/wellness;virtual worlds"
+  },
+  {
+    "First Name":"Jess Jiyoung ",
+    "Last Name":"Jung",
+    "TAGS":"networked objects;physical computing;quantified self"
+  },
+  {
+    "First Name":"Justin ",
+    "Last Name":"Lange",
+    "TAGS":"networked objects;wearables/e-textiles"
+  },
+  {
+    "First Name":"Louise ",
+    "Last Name":"Foo",
+    "TAGS":"installation;mobile;sound/audio"
+  },
+  {
+    "First Name":"Su Hyun ",
+    "Last Name":"Kim",
+    "TAGS":"mobile;robotics;user interface"
+  },
+  {
+    "First Name":"Valerie ",
+    "Last Name":"Chen",
+    "TAGS":"entertainment;storytelling/narrative;virtual worlds"
+  },
+  {
+    "First Name":"Wajma ",
+    "Last Name":"Mohseni",
+    "TAGS":"education/learning;game design;web"
+  },
+  {
+    "First Name":"Xinran ",
+    "Last Name":"Wang",
+    "TAGS":"product design;web"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "First Name":"Aaron ",
+    "Last Name":"Sherwood",
+    "TAGS":"installation;screen-based art;sound/audio"
+  },
+  {
+    "First Name":"Alexandra ",
+    "Last Name":"Coym",
+    "TAGS":"assistive tech;networked objects;product design"
+  },
+  {
+    "First Name":"Mary ",
+    "Last Name":" Fe",
+    "TAGS":"game design;performance;storytelling/narrative"
+  },
+  {
+    "First Name":"Maria Paula ",
+    "Last Name":"Saba",
+    "TAGS":"education/learning;product design;wearables/e-textiles"
+  },
+  {
+    "First Name":"Norah ",
+    "Last Name":"Solorzano",
+    "TAGS":"installation;kinetic sculpture;video"
+  },
+  {
+    "First Name":"Ryan ",
+    "Last Name":"Bartley",
+    "TAGS":"game design;storytelling/narrative;virtual worlds"
+  },
+  {
+    "First Name":"Sarah ",
+    "Last Name":"Rothberg",
+    "TAGS":"quantified self;research;virtual worlds"
+  },
+  {
+    "First Name":"Sonia ",
+    "Last Name":"Li",
+    "TAGS":"education/learning;installation;sound/audio"
+  },
+  {
+    "First Name":"Todd ",
+    "Last Name":"Bryant",
+    "TAGS":"environment;installation;video"
+  },
+  {
+    "First Name":"Yu-Ting ",
+    "Last Name":"Feng",
+    "TAGS":"data visualization;environment;film/video/documentary"
+  }
+]

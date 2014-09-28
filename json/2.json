@@ -1,0 +1,52 @@
+[
+  {
+    "First Name":"Allison ",
+    "Last Name":"Burtch",
+    "TAGS":"research;urban intervention;web"
+  },
+  {
+    "First Name":"Carl ",
+    "Last Name":"Jamilkowski",
+    "TAGS":"research;social/community;user interface"
+  },
+  {
+    "First Name":"Christina ",
+    "Last Name":"Carter",
+    "TAGS":"animation;screen-based art;social/community"
+  },
+  {
+    "First Name":"Jay ",
+    "Last Name":"Zehngebot",
+    "TAGS":"education/learning;screen-based art;web"
+  },
+  {
+    "First Name":"Michelle ",
+    "Last Name":"Cortese",
+    "TAGS":"data visualization;language processing;wearables/e-textiles"
+  },
+  {
+    "First Name":"Omer ",
+    "Last Name":"Shapira",
+    "TAGS":"game design;screen-based art;virtual worlds"
+  },
+  {
+    "First Name":"Oscar ",
+    "Last Name":"Klingspor",
+    "TAGS":"installation;sound/audio"
+  },
+  {
+    "First Name":"Sam ",
+    "Last Name":"Brenner",
+    "TAGS":"game design;social/community;web"
+  },
+  {
+    "First Name":"Tianyu ",
+    "Last Name":"Wu",
+    "TAGS":"data visualization;environment;networked objects"
+  },
+  {
+    "First Name":"Yang ",
+    "Last Name":"Wang",
+    "TAGS":"animation;installation;virtual worlds"
+  }
+]

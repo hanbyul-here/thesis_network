@@ -1,0 +1,57 @@
+[
+  {
+    "First Name":"Ben ",
+    "Last Name":"Kauffman",
+    "TAGS":"environment;installation;research"
+  },
+  {
+    "First Name":"David ",
+    "Last Name":"Rios",
+    "TAGS":"installation;musical interfaces;physical computing"
+  },
+  {
+    "First Name":"Hanbyul ",
+    "Last Name":"Jo",
+    "TAGS":"data visualization;installation;storytelling/narrative"
+  },
+  {
+    "First Name":"Hannah ",
+    "Last Name":"Mishin",
+    "TAGS":"installation;kinetic sculpture;physical computing"
+  },
+  {
+    "First Name":"Asli ",
+    "Last Name":"Aydin",
+    "TAGS":"data visualization;quantified self;storytelling/narrative"
+  },
+  {
+    "First Name":"Marlon ",
+    "Last Name":"Evans",
+    "TAGS":"architecture;product design;robotics"
+  },
+  {
+    "First Name":"Peiqi ",
+    "Last Name":"Su",
+    "TAGS":"data visualization;installation;kinetic sculpture"
+  },
+  {
+    "First Name":"Mack ",
+    "Last Name":"Howell",
+    "TAGS":"mobile;networked objects;video"
+  },
+  {
+    "First Name":"William ",
+    "Last Name":"Lindmeier",
+    "TAGS":"data visualization;mobile;site-specific"
+  },
+  {
+    "First Name":"Xuedi ",
+    "Last Name":"Chen",
+    "TAGS":"data visualization;product design;wearables/e-textiles"
+  },
+  {
+    "First Name":"Zhenzhen ",
+    "Last Name":"Qi",
+    "TAGS":"game design;health/medical/wellness;virtual worlds"
+  }
+]

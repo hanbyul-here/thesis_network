@@ -1,0 +1,52 @@
+[
+  {
+    "First Name":"Alexandra ",
+    "Last Name":"Diracles",
+    "TAGS":"education/learning;web"
+  },
+  {
+    "First Name":"Caroline ",
+    "Last Name":"Sinders",
+    "TAGS":"game design;mobile;storytelling/narrative"
+  },
+  {
+    "First Name":"Gal ",
+    "Last Name":"Sasson",
+    "TAGS":"networked objects;performance;research"
+  },
+  {
+    "First Name":"Jon ",
+    "Last Name":"Wasserman",
+    "TAGS":"privacy;social/community;web"
+  },
+  {
+    "First Name":"Jonas ",
+    "Last Name":"Pedersen",
+    "TAGS":"product design;user interface;web"
+  },
+  {
+    "First Name":"Katie ",
+    "Last Name":"Adee",
+    "TAGS":"data visualization;education/learning;environment"
+  },
+  {
+    "First Name":"Michael ",
+    "Last Name":"Milazzo",
+    "TAGS":"living systems;product design;sustainability"
+  },
+  {
+    "First Name":"Rafa ",
+    "Last Name":"Gross-Brown",
+    "TAGS":"film/video/documentary;sustainability;web"
+  },
+  {
+    "First Name":"Vanessa ",
+    "Last Name":"Joho",
+    "TAGS":"education/learning;environment;mobile"
+  },
+  {
+    "First Name":"Youjin ",
+    "Last Name":"Shin",
+    "TAGS":"data visualization;health/medical/wellness;web"
+  }
+]
