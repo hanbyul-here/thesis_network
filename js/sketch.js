@@ -107,8 +107,6 @@ window.onmousedown = function(event){
 
     if( pmouseX > 0 && pmouseX < canvasW && pmouseY > 0 && pmouseY <canvasH){
       
-
-
       d = canvasW*canvasW;
       idx = -1;
 
