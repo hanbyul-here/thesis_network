@@ -1,65 +1,26 @@
 <html>
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> 2014 ITP Thesis Network</title>
   <script language="javascript" src="./js/lib/p5.js"></script>
-  <!-- uncomment lines below to include extra p5 libraries -->
-	<!--<script language="javascript" src="../addons/p5.dom.js"></script>-->
-  <!--<script language="javascript" src="../addons/p5.sound.js"></script>-->
+  <script language="javascript" src="./js/vector.js"></script>
   <script language="javascript" src="./js/node.js"></script>
   <script language="javascript" src="./js/link.js"></script>
+  <script language="javascript" src="./js/oneclass.js"></script>
   <script language="javascript" src="./js/sketch.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+   <link href='./css/style.css' rel='stylesheet' type='text/css'>
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
-  <style> body {
-    background-color:#cccccc;
-    padding: 30; 
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-     
-     font-weight:400;
-    } 
-  #title{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-  }
-
-  canvas{
-
-    
-    position:absolute;
-    top:180px;
-    left:30px;
-    z-index :-1;
-    }
-
-  #wrapper{
-
-       position:absolute;
-       top:180px;
-       left:30px;
-  }
-  select{
-    font-size:3.5em;
-    z-index:1;
-  }
-
-a:link{
-  
-  text-decoration: none;
-  color:   rgb(100,0,0);
-    
-}
-  /* visited link */
-a:visited {
- color:   rgb(100,0,0);
-}
-
-    </style>
 </head>
 
 <body>
 
-  <h1 id="title">ITP 2014 Thesis Network</h1>
-
+  <div id="title"> ITP 2014 Thesis Network</div>
+  <div id="desc">
+    2014 ITP students choose up to 3 tags representing their thesis project among 20 tags. <br>
+    The network was drawn based on the tags we choose. 
+  </div>
   <br>
    Class : <select id="class" onchange="selectClass()">
   <option value="0">Gabe 1</option>

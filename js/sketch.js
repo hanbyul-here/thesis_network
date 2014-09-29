@@ -8,7 +8,10 @@ var thesisLists = [];
 var currIndex = 0;
 
 var defLeft  = 30;
-var defTop  = 180;
+if(window.innerWidth >768) var defTop  = 200;
+else var defTop = 300;
+
+var moved = false;
 
 function selectClass(){
   
@@ -32,8 +35,6 @@ function preload(){
 function setup() {
 
     createCanvas(canvasW,canvasH);
-
-
     for(var i =0; i< thesisLists.length; i++){
 
         classes.push(new OneClass(thesisLists[i]));
@@ -95,172 +96,74 @@ var d = 1000;
 var idx = -1;
 
 
-function mousePressed(){
-    d = canvasW*canvasW;
-    idx = -1;
+window.onmousedown = function(event){
 
-    for(var i =0; i<classes[currIndex].nodes.length; i++){
-        if( d > dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, mouseX,mouseY)){
-            d = dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, mouseX,mouseY);
+    var pmouseX = event.clientX - defLeft;
+    var pmouseY = event.clientY - defTop;
+
+    if( pmouseX > 0 && pmouseX < canvasW && pmouseY > 0 && pmouseY <canvasH){
+      
+
+      d = canvasW*canvasW;
+      idx = -1;
+
+      for(var i =0; i<classes[currIndex].nodes.length; i++){
+        if( d > dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, pmouseX,pmouseY)){
+            d = dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, pmouseX,pmouseY);
             idx = i;
-        }
-    }
-
-
-    if(d < classes[currIndex].nodes[idx].rad){
-      
-      var urlname =  classes[currIndex].nodes[idx].name.replace(" (","-");
-      urlname =  urlname.replace(". ","-");
-      urlname =  urlname.replace(") ","-");
-      urlname =  urlname.replace(" ","-");
-
-      
-      document.getElementById("student_name").innerHTML = "<a href= \"http://itp.nyu.edu/shows/thesis2014/"+urlname+"\" target = \"_new\">"+
-      classes[currIndex].nodes[idx].name+"</a>"; 
-
-     var links = document.getElementsByTagName("a");
-      
-       for(i=0; i<links.length;i++) {
-        var col = (currIndex*20+5)*1.5;
-        links[i].style.color = "hsl("+col+",50%,50%)";
-      }
-  
-
-
-      var ts = classes[currIndex].nodes[idx].tags.split(';');
-      var tagshtml = "";
-      for(var i =0; i<ts.length; i++){
-        tagshtml +=ts[i];
-        tagshtml+="<br>";
+          }
       }
 
-
-      document.getElementById("tags").innerHTML = tagshtml;
-    
-    }
-
-}
-
-
-
-function touchStarted(){
-    d = canvasW*canvasW;
-    idx = -1;
-
-    for(var i =0; i<classes[currIndex].nodes.length; i++){
-        if( d > dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, ptouchX-defLeft,ptouchY-defTop)){
-            d = dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, ptouchX-defLeft,ptouchY-defTop);
-            idx = i;
-        }
-    }
-
-
-    if(d < classes[currIndex].nodes[idx].rad){
-      
-      var urlname =  classes[currIndex].nodes[idx].name.replace(" (","-");
-      urlname =  urlname.replace(". ","-");
-      urlname =  urlname.replace(") ","-");
-      urlname =  urlname.replace(" ","-");
-
-      
-      document.getElementById("student_name").innerHTML = "<a href= \"http://itp.nyu.edu/shows/thesis2014/"+urlname+"\" target = \"_new\">"+
-      classes[currIndex].nodes[idx].name+"</a>"; 
-
-     var links = document.getElementsByTagName("a");
-      
-       for(i=0; i<links.length;i++) {
-        var col = (currIndex*20+5)*1.5;
-        links[i].style.color = "hsl("+col+",50%,50%)";
-      }
-  
-
-
-      var ts = classes[currIndex].nodes[idx].tags.split(';');
-      var tagshtml = "";
-      for(var i =0; i<ts.length; i++){
-        tagshtml +=ts[i];
-        tagshtml+="<br>";
-      }
-
-
-      document.getElementById("tags").innerHTML = tagshtml;
-    
-    }
-    
-}
-
-function mouseDragged(){
-
-
-    if(d < classes[currIndex].nodes[idx].rad){
-        classes[currIndex].nodes[idx].moveNode(mouseX,mouseY);
-    }
-
-}
-
-function touchMoved(){
-
-
-    if(d < classes[currIndex].nodes[idx].rad){
-        classes[currIndex].nodes[idx].moveNode(ptouchX-defLeft,ptouchY-defTop);
-    }
-
-}
-function touchEnded(){
       if(d < classes[currIndex].nodes[idx].rad){
-        classes[currIndex].nodes[idx].moveNode(ptouchX-defLeft,ptouchY-defTop);
-    }
-}
+      
+      //put site link for selected student 
+        var urlname =  classes[currIndex].nodes[idx].name.replace(" (","-");
+        urlname =  urlname.replace(". ","-");
+        urlname =  urlname.replace(") ","-");
+        urlname =  urlname.replace(" ","-");
+      
+        document.getElementById("student_name").innerHTML = "<a href= \"http://itp.nyu.edu/shows/thesis2014/"+urlname+"\" target = \"_new\">"+
+        classes[currIndex].nodes[idx].name+"</a>"; 
 
-
-function Vector(_x,_y){
-
-    this.x = _x;
-    this.y = _y;
-
-    this.add= function(v){
-        this.x += v.x;
-        this.y += v.y;
-    }
-    
-
-    this.sub = function(v){
-        this.x -= v.x;
-        this.y -= v.y;
-        
-    }
-    
-}
-
-
-function OneClass(thesisList){
-
-    this.nodes = [];
-    this.links = [];
-    this.connection = 0;
-    
-
-  // put setup code here
-  for(var i =0; i<thesisList.length; i++){
-    this.nodes.push(new Node(thesisList[i]["First Name"],thesisList[i]["Last Name"],thesisList[i]["TAGS"]));
-  }
-  
-   for(var i = 0; i < thesisList.length; i++){
-     for(var j = (i); j<thesisList.length; j++){
-
-        var fromTags = thesisList[i].TAGS.split(';');
-        var toTags = thesisList[j].TAGS.split(';');
-        var thickness = 0;
-        for(var k = 0; k<fromTags.length; k++){
-            for(var h = 0; h<toTags.length; h++){
-                if(fromTags[k].toLowerCase() === toTags[h].toLowerCase()){
-                    thickness++;
-                    this.connection++;
-                }
-            }
+       var links = document.getElementsByTagName("a");
+      
+         for(i=0; i<links.length;i++) {
+          var col = (currIndex*20+5)*1.5;
+          links[i].style.color = "hsl("+col+",50%,50%)";
         }
-        if(thickness>0) this.links.push(new Link(this.nodes[i],this.nodes[j],thickness));
-     }
-   }
   
+
+      var ts = classes[currIndex].nodes[idx].tags.split(';');
+      var tagshtml = "";
+      for(var i =0; i<ts.length; i++){
+        tagshtml +=ts[i];
+        tagshtml+="<br>";
+      }
+
+
+      document.getElementById("tags").innerHTML = tagshtml;
+    
+    }
+    moved = true;
+  }
 }
+
+
+window.onmouseup = function(){
+  moved = false;
+}
+
+
+
+window.onmousemove = function(e){
+    
+    if(moved === true){
+      if(d < classes[currIndex].nodes[idx].rad){
+        classes[currIndex].nodes[idx].moveNode(pmouseX,pmouseY);
+      }
+  }
+}
+
+
+
+
