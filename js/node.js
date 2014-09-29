@@ -64,8 +64,8 @@ function Node(_label,_lastname,_tags){
     }
 
 
-    this.showDetail = function(){
-        if(dist(this.pos.x,this.pos.y,mouseX,mouseY)<this.rad){
+    this.showDetail = function(_x,_y){
+        if(dist(this.pos.x,this.pos.y,_x,_y)<this.rad){
             this.fillColor =255;
             this.selected = true;
 

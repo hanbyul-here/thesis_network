@@ -1,21 +1,25 @@
-
-var canvasW = window.innerWidth*8/10;
-var canvasH = window.innerHeight-250;
-
 var classes = [];
 var thesisLists = [];
 
 var currIndex = 0;
-
 var defLeft  = 30;
-if(window.innerWidth >768) var defTop  = 200;
-else var defTop = 300;
+ var defTop;
+if(window.innerWidth >768) {
+  defTop  = 200;
+  var canvasW = window.innerWidth*7/10;
+  var canvasH = window.innerHeight*7/8;
+}
+else{
+
+  defTop = 400;
+  var canvasW = window.innerWidth*9/10;
+  var canvasH = window.innerHeight*5/8;
+}
 
 var moved = false;
 
 function selectClass(){
   
-
     currIndex =  document.getElementById("class").value;
     document.getElementById("class_detail").innerHTML = "Total connection : " + classes[currIndex].connection;
 
@@ -41,7 +45,6 @@ function setup() {
     }
     colorMode(HSB,250);
     smooth();
-    
 }
 
 
@@ -81,12 +84,11 @@ function draw() {
     }
 }
 
-
   for(var i = 0; i< classes[currIndex].nodes.length; i++){
     
     classes[currIndex].nodes[i].draw();
     classes[currIndex].nodes[i].floating();
-    classes[currIndex].nodes[i].showDetail();
+    classes[currIndex].nodes[i].showDetail(pmouseX,pmouseY);
     
   }
 
@@ -95,17 +97,21 @@ function draw() {
 var d = 1000;
 var idx = -1;
 
+var pmouseX ;
+var pmouseY ;
 
 window.onmousedown = function(event){
 
-    var pmouseX = event.clientX - defLeft;
-    var pmouseY = event.clientY - defTop;
+    pmouseX = event.clientX - defLeft;
+    pmouseY = event.clientY + window.pageYOffset - defTop;
 
     if( pmouseX > 0 && pmouseX < canvasW && pmouseY > 0 && pmouseY <canvasH){
       
 
+
       d = canvasW*canvasW;
       idx = -1;
+
 
       for(var i =0; i<classes[currIndex].nodes.length; i++){
         if( d > dist(classes[currIndex].nodes[i].pos.x,classes[currIndex].nodes[i].pos.y, pmouseX,pmouseY)){
@@ -155,9 +161,14 @@ window.onmouseup = function(){
 
 
 
-window.onmousemove = function(e){
+window.onmousemove = function(event){
+
+    pmouseX = event.clientX - defLeft;
+    pmouseY = event.clientY - defTop;
     
     if(moved === true){
+        var pmouseX = event.clientX - defLeft;
+    var pmouseY = event.clientY - defTop;
       if(d < classes[currIndex].nodes[idx].rad){
         classes[currIndex].nodes[idx].moveNode(pmouseX,pmouseY);
       }
